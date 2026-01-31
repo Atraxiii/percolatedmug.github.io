@@ -1,0 +1,53 @@
+:root {
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --text: #e0e0e0;
+    --accent: #00adb5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(180deg, #1f1f1f 0%, #121212 100%);
+}
+
+h1 { color: var(--accent); margin: 0; }
+
+main { max-width: 900px; margin: auto; padding: 20px; }
+
+#tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-5px); border-color: var(--accent); }
+
+canvas { width: 100%; height: auto; border-radius: 4px; }
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer { text-align: center; padding: 2rem; font-size: 0.8rem; opacity: 0.7; }
